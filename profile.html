@@ -1,0 +1,193 @@
+<body>
+    <header>
+          <div class="header-content">
+            <img src="selva s.jbeg.jpg" alt="your profile picture" class="profile-picture">
+            <h1>selvasiva</h1>
+            <p>passionate on Study</p>
+          </div>
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>        
+  
+    
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>Hello Everyone! This is selva S and i am a College Student.</p>
+
+        </div>
+    </section>
+
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Bsc</h2>
+            <p>Government Arts and Science College Aranthangi-CS</p>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>Programming</li>
+                
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>Resume</h2>
+                <a href=class="download-botton">Download CV</a>
+            </div>
+        </center>
+    </section>
+
+
+    <footer>
+        <p>&copy;2023 selva S</p>
+    </footer>
+
+
+
+
+    <style>
+        body  {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+
+        }
+        
+        header {
+               background-color: #252424;
+               color: white;
+               text-align:center;
+               padding: 2rem 0;
+               position: relative;;
+
+
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .profile-picture  {
+               width: 100px;
+               height: 100px;
+               border-radius: 75%;
+               object-fit: cover;
+               position: absolute;
+               top: 75px;
+               left: 75px;
+
+        }
+
+        nav {
+            background-color: #252525;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {   
+             list-style-type: none;
+             padding: 0;
+
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #faf7f7;
+        }
+
+        .section-content {
+            background-color: #faf7f7;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px hsl(0, 0%, 15%);
+
+        }
+
+        .download-button {
+            background-color: #b60c0c;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+
+        }
+        .download-button:hover {
+            background-color: #0f1ef0;
+
+        }
+         footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+         }
+
+         ul {
+            list-style: disc;
+            padding-left: 20px;
+         }
+
+       </style>
+
+       <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click',function(e) {
+                    e.preventDefault();
+                
+                       const targetId = this.getAttribute('href').substring(1);
+                       const targetElement = document.getElementById(targetId);
+                        
+                       if (targetElement) {
+                           window.scrollTo({
+                                 top:targetElement.offsetTop,
+                                 behavior: 'smooth'
+
+                           });
+                        }
+                    });
+                });
+             </script>       
+              
